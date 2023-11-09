@@ -1,0 +1,122 @@
+@import "./../../variables/Variable.scss";
+
+.side {
+  border-right: $borderline-right;
+
+}
+
+.sideNavbar {
+
+  background: $white;
+  font-weight: 600;
+
+  //common
+  p {
+    font-size: $font-para;
+
+    
+  }
+
+  .logo {
+    gap: 15.57px;
+    padding: 20px;
+
+    img {
+      width: 33.429px;
+      height: 42.545px;
+    }
+
+    span {
+      color: $black;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+
+  // side-heading
+  .side-heading {
+    font-size: 18px;
+  }
+
+  // demo-buttons
+  .sidebar-buttons ul {
+    gap: 10px;
+  }
+
+  .demo-list li {
+    width: 242px;
+    padding: 12px;
+    gap: 10px;
+    border-radius: 15px;
+
+    p {
+      color: $white;
+      letter-spacing: 0.15px;
+      padding: 2px;
+      margin: 0px;
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .demo-list li:nth-child(1) {
+    background: linear-gradient(90deg, #9400d3 0%, #4b0082 100%);
+  }
+
+  .demo-list li:nth-child(2) {
+    background: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+  }
+
+  .demo-list li:nth-child(3) {
+    background: linear-gradient(90deg, #ff8008 0%, #ffc837 100%);
+  }
+
+  .line-2 {
+    margin-top: 64px;
+  }
+
+  /* history */
+
+  .history-record {
+
+    padding: 12px;
+    gap: 12px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+
+  /* feature */
+
+  .feature-btn-container ul{
+    padding: 12px;
+
+    li {
+      padding: 12px;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      color: $black;
+      font-weight: 400;
+    }
+  }
+
+}

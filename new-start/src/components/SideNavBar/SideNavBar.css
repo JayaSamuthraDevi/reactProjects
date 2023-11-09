@@ -1,0 +1,88 @@
+.side {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sideNavbar {
+  background: #fff;
+  font-weight: 600;
+  /* history */
+  /* feature */
+}
+.sideNavbar p {
+  font-size: 14px;
+}
+.sideNavbar .logo {
+  gap: 15.57px;
+  padding: 20px;
+}
+.sideNavbar .logo img {
+  width: 33.429px;
+  height: 42.545px;
+}
+.sideNavbar .logo span {
+  color: #1c1c1c;
+  font-size: 28px;
+  font-weight: 600;
+}
+.sideNavbar .side-heading {
+  font-size: 18px;
+}
+.sideNavbar .sidebar-buttons ul {
+  gap: 10px;
+}
+.sideNavbar .demo-list li {
+  width: 242px;
+  padding: 12px;
+  gap: 10px;
+  border-radius: 15px;
+}
+.sideNavbar .demo-list li p {
+  color: #fff;
+  letter-spacing: 0.15px;
+  padding: 2px;
+  margin: 0px;
+}
+.sideNavbar .demo-list li img {
+  width: 16px;
+  height: 16px;
+}
+.sideNavbar .demo-list li:nth-child(1) {
+  background: linear-gradient(90deg, #9400d3 0%, #4b0082 100%);
+}
+.sideNavbar .demo-list li:nth-child(2) {
+  background: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+}
+.sideNavbar .demo-list li:nth-child(3) {
+  background: linear-gradient(90deg, #ff8008 0%, #ffc837 100%);
+}
+.sideNavbar .line-2 {
+  margin-top: 64px;
+}
+.sideNavbar .history-record {
+  padding: 12px;
+  gap: 12px;
+}
+.sideNavbar .history-record img {
+  width: 24px;
+  height: 24px;
+}
+.sideNavbar .history-record p {
+  font-weight: 400;
+  text-align: center;
+}
+.sideNavbar .feature-btn-container ul {
+  padding: 12px;
+}
+.sideNavbar .feature-btn-container ul li {
+  padding: 12px;
+  gap: 12px;
+  cursor: pointer;
+}
+.sideNavbar .feature-btn-container ul img {
+  width: 24px;
+  height: 24px;
+}
+.sideNavbar .feature-btn-container ul p {
+  color: #1c1c1c;
+  font-weight: 400;
+}/*# sourceMappingURL=SideNavBar.css.map */

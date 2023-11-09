@@ -1,0 +1,105 @@
+@import "./../../variables/Variable.scss";
+.doc_container {
+  height: 100%;
+  background-color:$doc-bg;
+
+
+.doc-header {
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    padding-top: 38px;
+
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    opacity: 0.54;
+    margin: 0px 80px;
+  }
+}
+
+.upload-box {
+  border-radius: 16px;
+  background: $white;
+  margin: 26px 24px 24px 24px;
+
+
+  .upload-area {
+    padding: 16px 24px 16px 32px;
+    margin: 26px 24px;
+    gap: 24px;
+    border-radius: 10px;
+    border: $upload-border;
+    cursor: pointer;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+
+.upload-file-placeholderText {
+  row-gap: 12px;
+
+  h6 {
+    font-size: 13px;
+  }
+
+  p {
+    color: $upload-text;
+    font-size: 12px;
+  }
+}
+
+.file-input {
+  input {
+    display: none;
+  }
+
+  h5 {
+    border-radius: 5px;
+    margin-bottom: 0px;
+    border: $upload-btn-border;
+    background: #fbfdfe;
+    padding: 12px 16px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
+
+
+
+.fileContainer {
+  max-width: 60%;
+  padding: 16px;
+  background-color:$file-container-bg;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  h6 {
+   
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  p {
+    color: $grey;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+
+}
