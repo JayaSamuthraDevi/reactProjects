@@ -1,0 +1,43 @@
+.Home {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  top: 0;
+}
+.Home .videoBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.Home .videoBg video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Home .sectionText {
+  position: absolute;
+  height: 100%;
+  top: 30%;
+  bottom: 50%;
+  color: var(--whiteColor);
+  padding: 0 1.3rem;
+}
+.Home .sectionText h1 {
+  font-size: var(--biggestFontSize);
+  font-weight: 900;
+}
+.Home .sectionText p {
+  padding: 1rem 0;
+  font-size: var(--normalFontSize);
+  font-weight: 500;
+}
+.Home .sectionText .btn {
+  gap: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: var(--h3FontSize);
+}
+.Home .popularPlaces {
+  display: none;
+}/*# sourceMappingURL=Home.css.map */

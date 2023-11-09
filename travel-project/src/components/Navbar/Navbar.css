@@ -1,0 +1,67 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  border-bottom: 1.5px solid var(--primaryColor);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+.navBar .logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navBar .logoDiv span {
+  color: var(--blackColor);
+  font-size: var(--h3FontSize);
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .navBar .menu {
+    position: absolute;
+    width: 70%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(255, 255, 255, 0.94);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: 0.6s ease-in-out;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.517);
+  }
+  .navBar li {
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .navBar li:hover {
+    color: var(--primaryColor);
+    border-bottom: 1.5px solid var(--primaryColor);
+  }
+}
+.navBar .menuIcon, .navBar .closeIcon {
+  font-size: var(--h1FontSize);
+}
+.navBar .menuIcon:hover, .navBar .closeIcon:hover {
+  color: var(--primaryColor);
+}
+.navBar .closeIcon {
+  position: absolute;
+  bottom: -15px;
+  right: 50%;
+  left: 50%;
+  color: var(--blackColor);
+  transform: translate(-50%);
+}
+.navBar .showNavbar {
+  top: 8rem;
+}/*# sourceMappingURL=Navbar.css.map */

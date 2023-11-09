@@ -1,0 +1,40 @@
+.dots {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+
+    .dot {
+        width: 10px;
+        aspect-ratio: 1;
+        background: var(--primaryColor);
+        border-radius: 50%;
+
+
+    }
+    .dance{
+        animation: rise 1000ms infinite alternate;
+    }
+    @keyframes rise {
+        50%{
+
+            box-shadow: 0 10px 0px 0 grey;
+        }
+        100%{
+            transform: translateY(-30px);
+            box-shadow: 0 10px 0px 0 var(--primaryColor);
+        }
+        
+    }
+
+    @for $i from 1 through 12{
+        .dot:nth-child(#{$i}){
+            animation-delay: 100ms *$i;
+        }
+    } 
+}
+
+.clickBtn {
+    font-size: var(--h3FontSize);
+    margin: auto;
+}

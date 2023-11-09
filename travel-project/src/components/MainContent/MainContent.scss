@@ -1,0 +1,85 @@
+section {
+    padding-block: 5rem;
+
+
+    .wrapper {
+        // margin-inline: auto;
+        // padding-inline:10rem;
+        padding: 5rem;
+
+        .section-title {
+            font-size: 2.25rem;
+        }
+    }
+
+}
+
+.diagonal {
+    //custome variables
+    --skew-angle: -5deg;
+    --background: var(--sectionBg);
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+        content: '';
+        background: var(--background);
+        position: absolute;
+        inset: 0;
+        transform: skewY(var(--skew-angle));
+        z-index: -1;
+    }
+}
+
+.spikes {
+    --spike-height: 20px;
+    --spike-width: 70px;
+    --spike-color: white;
+    position: relative;
+    background: var(--sectionBg);
+
+}
+
+.spikes::before,
+.spikes::after {
+
+
+    // mask svg image created by  https://yqnn.github.io/svg-path-editor/ 
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: var(--spike-height);
+    background: var(--spike-color);
+    -webkit-mask-image: url('./../../assets/triangle.svg');
+    -webkit-mask-size: var(--spike-width) var(--spike-height); //(x,y )  if height less than before-content height svg repeats to fill the specified height
+    // -webkit-mask-repeat: repeat-x;  //it makes svg to repeat only in x-axis
+
+}
+
+.spikes::before {
+    top: 0;
+}
+
+.spikes::after {
+    bottom: 0;
+    transform: rotate(.5turn);
+}
+
+.wavy {
+
+    // wavy creater
+    //  mask created with  https://css-generators.com/wavy-shapes/    
+
+    background: var(--sectionBg);
+
+
+    --mask:
+        radial-gradient(35.23px at 50% 49.00px, #000 99%, #0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
+        radial-gradient(35.23px at 50% -29px, #0000 99%, #000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
+        radial-gradient(35.23px at 50% calc(100% - 49.00px), #000 99%, #0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
+        radial-gradient(35.23px at 50% calc(100% + 29.00px), #0000 99%, #000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+}
