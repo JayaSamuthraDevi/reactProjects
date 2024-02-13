@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.btn_style{
+  width: max-content;
+  height: 2.2rem;
+  padding:1rem 1.5rem;
+  color: $white;
+  background-color: $primary;
+  border: .1rem solid $primary;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  @include flex-row(center, center);
+
+  .icon_style{
+    color: $white;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+  }
+}
+.clear_btn{
+  color: $primary;
+  background-color: $white;
+}

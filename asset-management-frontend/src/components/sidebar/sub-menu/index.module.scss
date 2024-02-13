@@ -1,0 +1,12 @@
+@import '../../../styles/variables.scss';
+
+.subMenu {
+  font-size: 1.3rem;
+  text-align: start;
+  align-self: center;
+  margin-top: -1.5rem;
+  cursor: pointer;
+  & .selected {
+    color: $black;
+  }
+}

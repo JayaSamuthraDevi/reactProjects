@@ -1,0 +1,15 @@
+@import '../../../styles/mixins';
+
+.menu {
+  @include flex-gap-coordinate(center, flex-start, 1.5rem);
+  font-size: 1.3rem;
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.menuSelected {
+  background-color: $white;
+  color: $primary;
+  border-radius: 0.7rem;
+}

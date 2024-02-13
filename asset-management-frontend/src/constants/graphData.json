@@ -1,0 +1,52 @@
+{
+  "content": {
+    "totalAssets": 120,
+    "totalAccessories": 120,
+    "totalVendors": 3,
+    "totalAssetCost": 5000,
+    "assignedAssets": 100,
+    "unassignedAssets": 20,
+    "totalEmployee": 350,
+    "rentalAssetsGraph": [
+      {
+        "vendor1": {
+          "mac": 12,
+          "windows": 14,
+          "linux": 15,
+          "desktop": 4,
+          "imac": 2
+        },
+        "vendor2": {
+          "mac": 6,
+          "windows": 8,
+          "linux": 10,
+          "desktop": 2,
+          "imac": 1
+        },
+        "vendor3": {
+          "mac": 5,
+          "windows": 7,
+          "linux": 10,
+          "desktop": 6,
+          "imac": 3
+        }
+      }
+    ],
+    "totalAccessoriesGraph": {
+      "keyboard": 123,
+      "mouse": 123,
+      "lanCable": 123,
+      "lanConnector": 123,
+      "pendrive": 13,
+      "mobile": 11,
+      "bag": 123
+    },
+    "totalAssestsGraph": {
+      "lap": 120,
+      "imac": 122,
+      "desktop": 123
+    }
+  },
+  "status": true,
+  "status_code": "200"
+}

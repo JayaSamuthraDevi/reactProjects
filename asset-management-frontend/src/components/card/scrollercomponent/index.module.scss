@@ -1,0 +1,15 @@
+.scrollerwrap{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    .scroller{
+        display: flex;
+        overflow: scroll;
+        gap:3.7rem;
+    }
+    .scrollerasset{
+        display: flex;
+        overflow: scroll;
+        gap:1rem;
+    }
+}

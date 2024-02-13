@@ -1,0 +1,80 @@
+export const Tabledata = [
+  {
+    id: 1,
+    empId: 90594,
+    empname: 'Arun',
+    designation: 101,
+  },
+  {
+    id: 2,
+    empId: 90595,
+    empname: 'Gowtham',
+    designation: 102,
+  },
+  {
+    id: 3,
+    empId: 90596,
+    empname: 'Shangu',
+    designation: 103,
+  },
+  {
+    id: 4,
+    empId: 90597,
+    empname: 'Sandeep',
+    designation: 104,
+  },
+  {
+    id: 5,
+    empId: 90598,
+    empname: 'Naveen',
+    designation: 105,
+  },
+  {
+    id: 6,
+    empId: 90594,
+    empname: 'Arddun',
+    designation: 101,
+  },
+  {
+    id: 7,
+    empId: 90595,
+    empname: 'Gowtddham',
+    designation: 102,
+  },
+  {
+    id: 8,
+    empId: 90596,
+    empname: 'Shandddgu',
+    designation: 103,
+  },
+  {
+    id: 9,
+    empId: 90597,
+    empname: 'Saddndeep',
+    designation: 104,
+  },
+  {
+    id: 10,
+    empId: 90598,
+    empname: 'Naveen',
+    designation: 105,
+  },
+  {
+    id: 11,
+    empId: 90596,
+    empname: 'Shangu',
+    designation: 103,
+  },
+  {
+    id: 12,
+    empId: 90597,
+    empname: 'Sandeep',
+    designation: 104,
+  },
+  {
+    id: 13,
+    empId: 90598,
+    empname: 'Naveen',
+    designation: 105,
+  },
+];

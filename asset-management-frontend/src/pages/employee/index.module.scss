@@ -1,0 +1,24 @@
+@import '../../styles/mixins';
+@import '../../styles/variables.scss';
+
+.container {
+  .title {
+    margin-left: 1rem;
+  }
+  .top {
+    margin-top: 1rem;
+    margin: 0 3rem;
+    @include flex-row(center, space-between);
+    .leftWrapper {
+      height: 3rem;
+      border: 0.07rem solid $lightgrey;
+      border-radius: 0.63rem;
+      padding: 0 0.94rem;
+      display: flex;
+      align-items: center;
+    }
+    .rightWrapper {
+      @include flex-row-gap(1rem);
+    }
+  }
+}

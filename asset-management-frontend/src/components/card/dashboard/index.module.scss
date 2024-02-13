@@ -1,0 +1,24 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins';
+
+.dashboardcard {
+  width: 100%;
+  @include flex-gap-coordinate(center, center, 9rem);
+  row-gap: 3rem;
+  flex-wrap: wrap;
+  .dashboard {
+    background-color: $white;
+    box-shadow: 0rem 0rem 3rem -2rem $black;
+    color: $black;
+    width: 14rem;
+    height: 7rem;
+    border-radius: 1rem;
+    @include flex-column-coordinates(center,center,1rem);
+    font-size: 1.3rem;
+    transition: all 0.3s;
+  }
+  .dashboard:hover {
+    color: $black;
+    transform: scale(1.1);
+  }
+}

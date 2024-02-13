@@ -1,0 +1,57 @@
+@import '../../styles//mixins';
+@import '../../styles/variables.scss';
+.container {
+  @include flex-row(center, space-between);
+  margin: 0.5rem 5rem;
+  max-width: 100%;
+  .dropDown {
+    @include flex-row-gap(0.35rem);
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  select {
+    width: 3rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #e0e0e0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .paginate {
+    @include flex-row-center(0.8rem, center);
+  }
+  .paginatePrev,
+  .paginateNext {
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .paginateNumber {
+    @include flex-row(center, center);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+    background-color: rgb(190, 188, 188);
+    cursor: pointer;
+  }
+  .activePage {
+    @include flex-row(center, center);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: $primary;
+    color: $white;
+    font-weight: 700;
+    border: none;
+  }
+}

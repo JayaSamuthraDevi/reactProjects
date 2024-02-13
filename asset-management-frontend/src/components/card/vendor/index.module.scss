@@ -1,0 +1,57 @@
+@import '../../../styles/variables.scss';
+
+.vendorCard {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  background-color: $palebluewhite;
+  line-height: 1.4rem;
+  height: 13rem;
+  white-space: 'no-wrap';
+  text-overflow: ellipsis;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  border: 0.2rem solid $black;
+  padding: 1.4rem;
+  padding-top: 0.5rem;
+  width: fit-content;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.6rem;
+    gap: 3rem;
+    width: 20rem;
+    .FaIdCardIcon {
+      height: 4rem;
+      width: 2.5rem;
+      font-size: xx-large;
+      padding-top: 0rem;
+    }
+  }
+
+  .vendorCardBody {
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    p {
+      padding-top: 1.2rem;
+      padding-left: 2.5rem;
+      justify-content: baseline;
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+    button {
+      display: flex;
+      width: 10rem;
+      justify-content: space-between;
+      align-self: self-end;
+      font-size: large;
+      margin-top: 1.4rem;
+      padding: 0.5rem;
+      background-color: $palebluewhite;
+      border: none;
+    }
+  }
+}

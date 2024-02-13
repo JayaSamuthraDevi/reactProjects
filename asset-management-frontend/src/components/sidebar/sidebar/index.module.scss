@@ -1,0 +1,28 @@
+@import '../../../styles/mixins';
+
+.sidebar {
+  width: 14rem;
+  position: relative;
+  position: relative;
+  height: 100vh;
+  background-color: $primary;
+  color: $white;
+  &_logo {
+    margin: 1.5rem;
+    width: 9.375rem;
+    height: 6.25rem;
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &_navLinks {
+    @include flex-column-gap(2rem);
+    width: 90%;
+  }
+  &_logout {
+    position: absolute;
+    bottom: 1rem;
+    width: 90%;
+  }
+}
